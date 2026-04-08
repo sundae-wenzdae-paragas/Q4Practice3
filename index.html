@@ -13,58 +13,42 @@
 </head>
 <body>
 <h2>JavaScript For Loop</h2>
-
-<p id="sample"></p>
-
-<script>
-let Sample1= "";
-
+<p id="sample1"></p> <script>
+let Sample1 = "";
 for (let x = 0; x < 3; x++) {
   Sample1 += "The number is " + x + "<br>";
 }
-
-document.getElementById("sample").innerHTML = Sample1;
+document.getElementById("sample1").innerHTML = Sample1;
 </script>
-
-
-
 
 
 <h2>JavaScript While Loop</h2>
-
-<p id="sample"></p>
-
-<script>
-let Sample2= "";
-let z = 0;
-while (z < 5) {
-  Sample2 += "<br>The number is " + y;
-  z++;
+<p id="sample2"></p> <script>
+let Sample2 = "";
+let z_while = 0; // Renamed to avoid confusion with the do-while 'z'
+while (z_while < 5) {
+  Sample2 += "The number is " + z_while + "<br>"; // Fixed: Changed 'y' to 'z_while'
+  z_while++;
 }
-document.getElementById("sample").innerHTML = Sample2;
+document.getElementById("sample2").innerHTML = Sample2;
 </script>
 
 
-
-
-
 <h2>JavaScript do-While Loop</h2>
-
 <p id="sample3"></p>
 
 <script>
 let Sample3 = "";
-let z = 0;
+let z_do = 0; 
 
 do {
-  Sample3 += "<br>The number is " + z;
-  z++;
+  Sample3 += "The number is " + z_do + "<br>";
+  z_do++;
 }
-while (z < 5);  
+while (z_do < 5);  
 
 document.getElementById("sample3").innerHTML = Sample3;
 </script>
-
 
 
 </body>
