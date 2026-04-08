@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Q4 Practice 3</title>
 <style>
-    .body{
+    body{
         background-color:rgb(118, 39, 192);
     }
 </style>
@@ -25,9 +25,19 @@ for (let x = 0; x < 3; x++) {
 
 document.getElementById("sample").innerHTML = Sample1;
 </script>
-    <h1></h1>
-    <script>
 
-    </script>
+<h2>JavaScript While Loop</h2>
+
+<p id="sample"></p>
+
+<script>
+let Sample2= "";
+let y = 0;
+while (y < 5) {
+  Sample2 += "<br>The number is " + y;
+  y++;
+}
+document.getElementById("sample").innerHTML = Sample2;
+</script>
 </body>
 </html>
